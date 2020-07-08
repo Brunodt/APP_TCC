@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:background="#16A3A3A3"
+    tools:context=".MenuLocacao">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="353dp"
+        android:layout_height="416dp"
+        android:gravity="center_horizontal|top"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.493">
+
+        <TextView
+            android:id="@+id/txvNomeVeiculo"
+            android:layout_width="340dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:foregroundGravity="center_vertical"
+            android:gravity="center_horizontal"
+            android:textColor="#0C0101"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txv1"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:foregroundGravity="center_vertical"
+            android:text="Tempo Para Chegar ao Automóvel: "
+            android:textColor="#113979"
+            android:textSize="18sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/txvCronometro"
+            android:layout_width="76dp"
+            android:layout_height="29dp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            android:layout_marginRight="5dp"
+            android:foregroundGravity="center_vertical"
+            android:gravity="center_horizontal"
+            android:textColor="#0C0C0C"
+            android:textSize="18sp"
+            android:textStyle="italic" />
+
+        <Button
+            android:id="@+id/btnConectar"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="229dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="10dp"
+            android:layout_marginLeft="16dp"
+            android:background="#D6E0F7"
+            android:foregroundGravity="center_vertical"
+            android:gravity="center_horizontal"
+            android:onClick="conectarVeiculo"
+            android:text="Iniciar Conexão"
+            android:textSize="24sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/txv2"
+            android:layout_width="216dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center_horizontal"
+            android:text="Total à Pagar: "
+            android:textColor="#113979" />
+
+        <TextView
+            android:id="@+id/txvSaldoTotal"
+            android:layout_width="176dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textColor="#0E0D0D"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/btnDevolver"
+            android:layout_width="173dp"
+            android:layout_height="wrap_content"
+            android:background="#D6E0F7"
+            android:onClick="devolverVeiculo"
+            android:text="Pagar e devolver"
+            android:textSize="18sp"
+            android:textStyle="italic" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

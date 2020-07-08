@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#16A3A3A3"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".InterfaceConexao"
+    tools:showIn="@layout/activity_interface_conexao">
+
+    <LinearLayout
+        android:layout_width="383dp"
+        android:layout_height="488dp"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="72dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.372">
+
+        <TextView
+            android:id="@+id/txvEstadoMsg"
+            android:layout_width="353dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textStyle="italic" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="301dp"
+            android:layout_height="96dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnBuscarDisp"
+                android:layout_width="140dp"
+                android:layout_height="81dp"
+                android:layout_margin="5dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:background="#D6E0F7"
+                android:onClick="procurarDispositivos"
+                android:text="Procurar Dispositivos"
+                android:textSize="18sp"
+                android:textStyle="italic" />
+
+            <Button
+                android:id="@+id/btnDispPareados"
+                android:layout_width="140dp"
+                android:layout_height="80dp"
+                android:layout_margin="5dp"
+                android:background="#D6E0F7"
+                android:onClick="dispositivosPareados"
+                android:text="Dispositivos Pareados"
+                android:textSize="18sp"
+                android:textStyle="italic" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnVisibilidade"
+            android:layout_width="145dp"
+            android:layout_height="54dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="#D6E0F7"
+            android:gravity="center"
+            android:onClick="habilitarVisibilidade"
+            android:text="Tornar Visível" />
+
+        <TextView
+            android:id="@+id/txv3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5dp"
+            android:gravity="center_horizontal"
+            android:text="Controle de Travas Elétricas:"
+            android:textColor="#113979"
+            android:textSize="18sp"
+            android:textStyle="italic" />
+
+        <Switch
+            android:id="@+id/swtTravas"
+            android:layout_width="255dp"
+            android:layout_height="39dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5dp"
+            android:gravity="center_horizontal"
+            android:scrollbarAlwaysDrawVerticalTrack="false"
+            android:scrollbarThumbHorizontal="@color/colorPrimary"
+            android:switchTextAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textOff="Portas Fechadas"
+            android:textOn="Portas Abertas"
+            android:verticalScrollbarPosition="defaultPosition" />
+
+        <Button
+            android:id="@+id/btnStartStop"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="128dp"
+            android:layout_height="146dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5dp"
+            android:background="#F30904"
+            android:gravity="center"
+            android:text="Engine Start/Stop"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="#0C0C0B"
+            android:textSize="24sp"
+            android:textStyle="italic"
+            android:typeface="normal"
+            android:visibility="visible"
+            android:onClick="botaoStartStop"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

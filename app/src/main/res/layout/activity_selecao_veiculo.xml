@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#16A3A3A3"
+    tools:context=".SelecaoVeiculo">
+
+    <LinearLayout
+        android:layout_width="384dp"
+        android:layout_height="593dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="Escolha o Veículo a ser utilizado"
+            android:textColor="#090808"
+            android:textSize="24sp"
+            android:textStyle="italic" />
+
+        <Spinner
+            android:id="@+id/spnCarros"
+            android:layout_width="298dp"
+            android:layout_height="36dp"
+            android:layout_margin="7dp"
+            android:clickable="true"
+            android:spinnerMode="dropdown" />
+
+        <ImageView
+            android:id="@+id/ivImagem"
+            android:layout_width="325dp"
+            android:layout_height="145dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="7dp"
+            app:srcCompat="@drawable/gm_captiva" />
+
+        <Button
+            android:id="@+id/btnDescricao"
+            android:layout_width="150dp"
+            android:layout_height="49dp"
+            android:layout_margin="7dp"
+            android:background="#D6E0F7"
+            android:onClick="acessarDescricao"
+            android:text="Descrição"
+            android:textSize="18sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="301dp"
+            android:layout_height="51dp"
+            android:layout_gravity="center"
+            android:layout_margin="7dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal"
+            android:text="Digite Quantas Horas Voce Deseja utilizar o Automóvel: "
+            android:textColor="#113979"
+            android:textSize="18sp"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/edtHoras"
+            android:layout_width="30dp"
+            android:layout_height="49dp"
+            android:layout_margin="7dp"
+            android:ems="10"
+            android:inputType="numberSigned" />
+
+        <Button
+            android:id="@+id/btnSelecionar"
+            android:layout_width="148dp"
+            android:layout_height="49dp"
+            android:layout_margin="7dp"
+            android:background="#D6E0F7"
+            android:onClick="selecionarVeiculo"
+            android:text="Selecionar"
+            android:textSize="18sp"
+            android:textStyle="italic" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
